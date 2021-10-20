@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.mainprocess.EmptyStatus">
+
+    <LinearLayout
+        android:id="@+id/coming_soon"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/coming_soon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/something_went_wrong"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/something_went_wrong" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no_network"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/no_network" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

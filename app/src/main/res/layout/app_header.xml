@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="@dimen/onefifty"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    android:layout_weight="4"
+                    tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/menu_btn"
+                            android:layout_width="@dimen/forty"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="@dimen/ten"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            android:src="@drawable/menuicon"
+                            android:contentDescription="@string/menu" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/digimariabannerlogo"
+                                android:contentDescription="@string/app_name" />
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/volumenote"
+                            android:weightSum="1"
+                            android:layout_width="@dimen/thirty"
+                            android:layout_height="@dimen/thirty"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/five"
+                            android:layout_marginBottom="@dimen/five"
+                            android:layout_marginRight="@dimen/fifteen"
+                            android:src="@drawable/volumeup"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:contentDescription="@string/soundon"
+                            tools:ignore="RtlHardcoded" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                app:cardCornerRadius="@dimen/twenty"
+                android:layout_margin="@dimen/fifteen"
+                android:layout_marginTop="120sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/twenty"
+                        android:layout_height="@dimen/twenty"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/fifteen"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:contentDescription="@string/search"
+                        android:src="@drawable/search" />
+
+                    <EditText
+                        android:id="@+id/searchkeyword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/twenty"
+                        android:layout_marginLeft="@dimen/twenty"
+                        android:autofillHints="@string/search"
+                        android:background="#00000000"
+                        android:hint="@string/search"
+                        android:textColor="@android:color/black"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

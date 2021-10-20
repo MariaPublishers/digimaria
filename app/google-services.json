@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "133060668317",
+    "firebase_url": "https://digimaria1-c2935.firebaseio.com",
+    "project_id": "digimaria1-c2935",
+    "storage_bucket": "digimaria1-c2935.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133060668317:android:87076cc96ebfeafcecdd74",
+        "android_client_info": {
+          "package_name": "com.mariapublishers.digimariaandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133060668317-hl8ctl2u4agvd02l282vjq3tgjmhvqqp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mariapublishers.digimariaandroid",
+            "certificate_hash": "37bed83b9be44b9de0b4d966af0122db9d27e156"
+          }
+        },
+        {
+          "client_id": "133060668317-2conc859gccsia2ladnthdce9498csbk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB94FP2QinPwsYaG8qT70Zgz8f_6QNZmzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133060668317-2conc859gccsia2ladnthdce9498csbk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

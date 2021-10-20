@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mariapublishers.digimariaandroid">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:name=".application.DigiMariaApplication"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        tools:replace="android:icon"
+        tools:targetApi="m">
+        <activity android:name=".activity.mainprocess.WebViewActivity"></activity>
+        <activity android:name=".activity.mainprocess.AssetActivity" />
+        <activity
+            android:name=".activity.mainprocess.UserDetailRegister"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.mainprocess.RegisterActivity"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.mainprocess.ContentActivity" />
+        <activity android:name=".activity.juniorkg.juniornumeracy.JuniorNumeracyActivity10" />
+        <activity android:name=".activity.mainprocess.SearchActivity" />
+        <activity android:name=".activity.nursery.funwithcolor.MickyColor" />
+        <activity android:name=".activity.nursery.funwithcolor.BirdColor" />
+        <activity android:name=".activity.nursery.funwithcolor.BugColor" />
+        <activity android:name=".activity.nursery.funwithcolor.DeerColor" />
+        <activity android:name=".activity.nursery.funwithcolor.ParrotDrawing" />
+        <activity android:name=".activity.mainprocess.RenderVideo" />
+        <activity android:name=".activity.mainprocess.ListVideo" />
+        <activity android:name=".activity.mainprocess.EmptyStatus" />
+        <activity android:name=".activity.mainprocess.RedirectVideo" />
+        <activity android:name=".activity.mainprocess.RedirectPages" />
+        <activity android:name=".activity.seniorkg.seniorgeneralawarness.SeniorGeneralWorksheet4" />
+        <activity android:name=".activity.seniorkg.seniorgeneralawarness.SeniorGeneralWorksheet3" />
+        <activity android:name=".activity.seniorkg.seniorgeneralawarness.SeniorGeneralWorksheet2" />
+        <activity android:name=".activity.seniorkg.seniorgeneralawarness.SeniorGeneralWorksheet1" />
+        <activity android:name=".activity.seniorkg.seniorgeneralawarness.SeniorGeneralActivity6" />
+        <activity android:name=".activity.seniorkg.seniorgeneralawarness.SeniorGeneralActivity5" />
+        <activity android:name=".activity.seniorkg.seniorgeneralawarness.SeniorGeneralActivity4" />
+        <activity android:name=".activity.seniorkg.seniorgeneralawarness.SeniorGeneralActivity3" />
+        <activity android:name=".activity.seniorkg.seniorgeneralawarness.SeniorGeneralActivity2" />
+        <activity android:name=".activity.seniorkg.seniorgeneralawarness.SeniorGeneralActivity1" />
+        <activity android:name=".activity.seniorkg.seniornumeracy.SeniorNumeracyActivity8" />
+        <activity android:name=".activity.seniorkg.seniornumeracy.SeniorNumeracyActivity7" />
+        <activity android:name=".activity.seniorkg.seniornumeracy.SeniorNumeracyActivity6" />
+        <activity android:name=".activity.seniorkg.seniornumeracy.SeniorNumeracyActivity5" />
+        <activity android:name=".activity.seniorkg.seniornumeracy.SeniorNumeracyActivity4" />
+        <activity android:name=".activity.seniorkg.seniornumeracy.SeniorNumeracyActivity3" />
+        <activity android:name=".activity.seniorkg.seniornumeracy.SeniorNumeracyActivity2" />
+        <activity android:name=".activity.seniorkg.seniornumeracy.SeniorNumeracyActivity1" />
+        <activity android:name=".activity.seniorkg.seniornumeracy.SeniorNumeracyWorksheet2" />
+        <activity android:name=".activity.seniorkg.seniornumeracy.SeniorNumeracyWorksheet1" />
+        <activity android:name=".activity.seniorkg.seniorliteracy.SeniorLiteracyWorksheet4" />
+        <activity android:name=".activity.seniorkg.seniorliteracy.SeniorLiteracyWorksheet3" />
+        <activity android:name=".activity.seniorkg.seniorliteracy.SeniorLiteracyWorksheet2" />
+        <activity android:name=".activity.seniorkg.seniorliteracy.SeniorLiteracyWorksheet1" />
+        <activity android:name=".activity.seniorkg.seniorliteracy.SeniorLiteracyActivity6" />
+        <activity android:name=".activity.seniorkg.seniorliteracy.SeniorLiteracyActivity5" />
+        <activity android:name=".activity.seniorkg.seniorliteracy.SeniorLiteracyActivity4" />
+        <activity android:name=".activity.seniorkg.seniorliteracy.SeniorLiteracyActivity3" />
+        <activity
+            android:name=".activity.seniorkg.seniorliteracy.SeniorLiteracyActivity2"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorkg.seniorliteracy.SeniorLiteracyActivity7"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorkg.seniorliteracy.SeniorLiteracyActivity8"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorkg.seniorliteracy.SeniorLiteracyActivity9"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorkg.seniorliteracy.SeniorLiteracyActivity1"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlasCard1"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard2"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard3"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard4"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard5"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard6"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard7"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard8"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard9"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard10"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard11"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard12"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard13"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard14"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard15"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard16"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard17"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard18"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard19"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard20"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard21"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard22"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard23"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard24"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard25"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorflashcard.SeniorFlashCard26"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorslide.SeniorSlideActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorslide.SeniorSlideActivityShapes"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorslide.SeniorSlideActivityVowels"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorslide.SlideShowMain"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorslide.SeniorSlideActivityNumeracy"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.seniorslide.SeniorSlideActivityBodyBody"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activity.juniorkg.juniorgeneralawarness.JuniorGeneralActivity10" />
+        <activity android:name=".activity.juniorkg.juniorgeneralawarness.JuniorGeneralActivity9" />
+        <activity android:name=".activity.juniorkg.juniorgeneralawarness.JuniorGeneralActivity8" />
+        <activity android:name=".activity.juniorkg.juniorgeneralawarness.JuniorGeneralActivity7" />
+        <activity android:name=".activity.juniorkg.juniorgeneralawarness.JuniorGeneralActivity6" />
+        <activity android:name=".activity.juniorkg.juniorgeneralawarness.JuniorGeneralActivity5" />
+        <activity android:name=".activity.juniorkg.juniorgeneralawarness.JuniorGeneralActivity4" />
+        <activity android:name=".activity.juniorkg.juniorgeneralawarness.JuniorGeneralActivity3" />
+        <activity android:name=".activity.juniorkg.juniorgeneralawarness.JuniorGeneralActivity2" />
+        <activity android:name=".activity.juniorkg.juniorgeneralawarness.JuniorGeneralActivity1" />
+        <activity android:name=".activity.juniorkg.juniornumeracy.JuniorNumeracyActivity9" />
+        <activity android:name=".activity.juniorkg.juniornumeracy.JuniorNumeracyActivity8" />
+        <activity android:name=".activity.juniorkg.juniornumeracy.JuniorNumeracyActivity7" />
+        <activity android:name=".activity.juniorkg.juniornumeracy.JuniorNumeracyActivity6" />
+        <activity android:name=".activity.juniorkg.juniornumeracy.JuniorNumeracyActivity5" />
+        <activity android:name=".activity.juniorkg.juniornumeracy.JuniorNumeracyActivity4" />
+        <activity android:name=".activity.juniorkg.juniornumeracy.JuniorNumeracyActivity3" />
+        <activity android:name=".activity.juniorkg.juniornumeracy.JuniorNumeracyActivity2" />
+        <activity android:name=".activity.juniorkg.juniornumeracy.JuniorNumeracyActivity1" />
+        <activity android:name=".activity.juniorkg.juniorliteracy.JuniorLiteracyActivity10" />
+        <activity android:name=".activity.juniorkg.juniorliteracy.JuniorLiteracyActivity9" />
+        <activity android:name=".activity.juniorkg.juniorliteracy.JuniorLiteracyActivity8" />
+        <activity android:name=".activity.juniorkg.juniorliteracy.JuniorLiteracyActivity7" />
+        <activity android:name=".activity.juniorkg.juniorliteracy.JuniorLiteracyActivity6" />
+        <activity android:name=".activity.juniorkg.juniorliteracy.JuniorLiteracyActivity5" />
+        <activity android:name=".activity.juniorkg.juniorliteracy.JuniorLiteracyActivity4" />
+        <activity android:name=".activity.juniorkg.juniorliteracy.JuniorLiteracyActivity3" />
+        <activity android:name=".activity.juniorkg.juniorliteracy.JuniorLiteracyActivity2" />
+        <activity android:name=".activity.juniorkg.juniorliteracy.JuniorLiteracyActivity1" />
+        <activity android:name=".activity.nursery.nurserygeneralawarness.NurseryGeneralActivity5" />
+        <activity android:name=".activity.nursery.nurserygeneralawarness.NurseryGeneralActivity4" />
+        <activity android:name=".activity.nursery.nurserygeneralawarness.NurseryGeneralActivity3" />
+        <activity android:name=".activity.nursery.nurserygeneralawarness.NurseryGeneralActivity2" />
+        <activity android:name=".activity.nursery.nurserygeneralawarness.NurseryGeneralActivity1" />
+        <activity android:name=".activity.nursery.nurserynumeracy.NurseryNumeracyActivity5" />
+        <activity android:name=".activity.nursery.nurserynumeracy.NurseryNumeracyActivity4" />
+        <activity android:name=".activity.nursery.nurserynumeracy.NurseryNumeracyActivity3" />
+        <activity android:name=".activity.nursery.nurserynumeracy.NurseryNumeracyActivity2" />
+        <activity android:name=".activity.nursery.nurserynumeracy.NurseryNumeracyActivity1" />
+        <activity android:name=".activity.mainprocess.PageScanner" />
+        <activity android:name=".activity.nursery.nurseryliteracy.SmallCaps" />
+        <activity android:name=".activity.nursery.nurseryliteracy.HelpFrog" />
+        <activity android:name=".activity.nursery.nurseryliteracy.HelpBee" />
+        <activity android:name=".activity.nursery.nurseryliteracy.FindChick" />
+        <activity android:name=".activity.nursery.nurseryliteracy.BookActivities" />
+        <activity android:name=".activity.mainprocess.AnimateVideo" />
+        <activity android:name=".activity.mainprocess.FlipBook" />
+        <activity android:name=".activity.mainprocess.BookLanding" />
+        <activity android:name=".activity.mainprocess.LicenceKey" />
+        <activity android:name=".activity.mainprocess.Dashboard" />
+        <activity
+            android:name=".activity.mainprocess.Login"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="adjustResize" /> <!-- <activity android:name="com.mariapublishers.digimariaandroid.activity.seniorflashcard.SeniorFlasCard1"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity android:name=".activity.mainprocess.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.mainprocess.ProfileActivity" />
+        <activity android:name=".activity.mainprocess.PublicationActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <service android:name=".service.MusicService" />
+    </application>
+
+</manifest>

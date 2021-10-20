@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fece2f</color>
+    <color name="colorPrimaryDark">#fec816</color>
+    <color name="colorAccent">#fe2f6e</color>
+    <color name="successgreen">#80FF00</color>
+    <color name="successgreen1">#439837</color>
+    <color name="failurered">#FF3333</color>
+    <color name="matchone">#FF94B4</color>
+    <color name="matchtwo">#76D7ED</color>
+    <color name="matchthree">#FFCD67</color>
+    <color name="matchfour">#BCD85F</color>
+    <color name="matchfive">#BDB6FA</color>
+    <color name="blueviolet">#8A2BE2</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#FCF8F8</color>
+    <color name="green_jl">#3D9239</color>
+    <color name="pleasent_green">#CFECD8</color>
+    <color name="yellow_jl">#cbf3f1</color>
+    <color name="yellow_jl2">#FFFF00</color>
+    <color name="red_jl">#ED1A3B</color>
+    <color name="tomato">#FFA07A</color>
+    <color name="orange_jl">#F58220</color>
+    <color name="pink_jl">#EC008C</color>
+    <color name="sienna">#A0522D</color>
+    <color name="jn10bluel">#A1DAFF</color>
+    <color name="jn10blued">#8DC6EF</color>
+    <color name="jn10bluem">#97D0F9</color>
+    <color name="jnl9">#FFCCF9</color>
+    <color name="lemonchiffon">#FFFACD</color>
+    <color name="sgw1">#CCE9FB</color>
+    <color name="text2">#6F6F6F</color>
+    <color name="text3">#B3B1B1</color>
+</resources>
