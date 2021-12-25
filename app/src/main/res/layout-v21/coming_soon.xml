@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/comingsoon"/>
+            android:src="@drawable/accessdenied"/>
 
 
         <TextView
@@ -34,6 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/twentyfive"
+            android:visibility="gone"
             android:text="@string/we_cant_make_you_to_wait_for_long_time"
             android:textColor="@color/black"
             android:textSize="@dimen/fifteen" />
