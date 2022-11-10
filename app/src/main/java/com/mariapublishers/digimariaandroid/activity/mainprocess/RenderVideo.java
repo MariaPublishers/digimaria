@@ -48,6 +48,8 @@ public class RenderVideo extends YouTubeBaseActivity implements VideoAdapter.OnN
     YouTubePlayerView youtube_player_view;
     String volval;
 
+    YouTubePlayer youTubePlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,9 +97,10 @@ public class RenderVideo extends YouTubeBaseActivity implements VideoAdapter.OnN
 
             youtube_player_view.initialize(Config.YOUTUBE_API_KEY, new YouTubePlayer.OnInitializedListener() {
                 @Override
-                public void onInitializationSuccess(YouTubePlayer.Provider provider, final YouTubePlayer youTubePlayer, boolean b) {
+                public void onInitializationSuccess(YouTubePlayer.Provider provider, final YouTubePlayer youTubePlayer1, boolean b) {
                     if (!b) {
 //                        youTubePlayer.loadVideo("XfP31eWXli4");
+                        youTubePlayer = youTubePlayer1;
                         youTubePlayer.loadVideo(path, 0);
                         youTubePlayer.setPlayerStyle(YouTubePlayer.PlayerStyle.DEFAULT);
                         youTubePlayer.setPlaylistEventListener(new YouTubePlayer.PlaylistEventListener() {
@@ -230,6 +233,7 @@ public class RenderVideo extends YouTubeBaseActivity implements VideoAdapter.OnN
 
     @Override
     public void onNoteClick(String position, String title) {
+        youTubePlayer.release();
         Intent start = new Intent(RenderVideo.this, RenderVideo.class);
         start.putExtra("bookid", pref.getBookId());
         start.putExtra("title", title);
